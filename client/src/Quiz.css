@@ -1,0 +1,165 @@
+/* Apply Calibri font globally */
+body {
+  font-family: 'Calibri', sans-serif;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+/* Center the quiz content container */
+.quizPageContainer {
+  text-align: center;
+  width: 60%; /* Maintain a reasonable width for the quiz container */
+  max-width: 1000px; /* Set a max-width to prevent it from becoming too wide */
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 100px auto 0 auto; /* Center the container and push it below the navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all content inside */
+  justify-content: flex-start;
+}
+
+/* Title styles */
+.quizPageTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black; /* Change the title color to black */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center; /* Center the title text */
+}
+
+/* Styling for the image container */
+.imageContainer {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+}
+
+.imageContainer img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Description text under image */
+.imageContainer p {
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+}
+
+/* Styling for quiz description */
+.quizDescription {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 20px;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center; /* Center the quiz description */
+}
+
+/* Center the question and options container */
+.questionQuizContainer {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the questions and options */
+  width: 100%; /* Ensure the question container takes up full width */
+}
+
+.question {
+  margin-bottom: 15px;
+  width: 100%; /* Ensure each question takes up full width */
+}
+
+.question h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center; /* Center the question text */
+}
+
+.question label {
+  display: block;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: center; /* Center the label text */
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  accent-color: gold;
+}
+
+/* Center the submit button container */
+.submitQuizButtonContainer {
+  display: flex;
+  justify-content: center; /* Center the container */
+  width: 100%; /* Ensure full width for the container */
+  margin-top: 20px; /* Add space above the button */
+}
+
+/* Submit button styles */
+.submitQuizButton {
+  background-color: gold;
+  color: black;
+  font-size: 18px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.submitQuizButton:hover {
+  background-color: #c79200;
+}
+
+.submitQuizButton:active {
+  background-color: #8c6800;
+}
+
+/* Score display styling */
+.scoreDisplay {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: gold;
+}
+
+a {
+  
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Additional styling for elements like error messages or validation */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

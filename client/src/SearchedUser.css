@@ -1,0 +1,62 @@
+.bio {
+  font-size: 24px; /* Increase the font size here */
+  font-weight: bold; /* Make the text bold for emphasis */
+  color: black; /* Ensure the text color is black */
+  text-align: center; /* Center the username text */
+  margin-top: 20px;
+}
+
+/* Quizzes Container in SearchedUser */
+.quizzesOnSearchedUserPageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Evenly distribute quizzes horizontally */
+  margin-top: 30px;
+  gap: 20px; /* Space between items */
+}
+
+/* Individual Quiz in SearchedUser */
+.quiz {
+  margin: 20px;
+  border: 1px solid #ddd; /* Subtle light border */
+  padding: 15px;
+  width: 300px; /* Fixed width for each quiz */
+  background-color: white; /* White background for the quiz items */
+  border-radius: 10px; /* Rounded corners for quiz items */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Quiz Title */
+.title {
+  color: black; /* Black text for quiz title */
+  font-size: 24px;
+}
+
+/* Quiz Question */
+.question {
+  color: black; /* Black text for quiz question */
+  font-size: 18px;
+}
+
+/* Buttons in the SearchedUser Quiz */
+.beginQuizButton, .viewQuizInfoButton {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: gold; /* Gold background for the buttons */
+  border: none;
+  color: black; /* Black text */
+  cursor: pointer;
+  font-family: Calibri, sans-serif;
+  width: 100%;
+}
+
+.beginQuizButton:hover, .viewQuizInfoButton:hover {
+  background-color: #b98f4b; /* Darker gold on hover */
+}
+
+/* No Quizzes Message */
+.noQuizzes {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}

@@ -1,0 +1,257 @@
+/* General Styling */
+body {
+  font-family: Calibri, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Quiz Page */
+.quizPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;  /* Take up full width of the viewport */
+  padding: 20px;
+  max-width: 100%; /* Allow full width */
+  margin: 0 auto;
+}
+
+/* Top Part */
+.topPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom: 2px solid #dcdcdc; /* Add a line between topPart and bottomPart */
+}
+
+/* Quiz Info */
+.quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center all items inside the quiz div */
+  justify-content: center; /* Vertically center the items */
+  text-align: center;  /* Center the text */
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5em;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.question {
+  font-size: 1.4em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.user {
+  font-size: 1.1em;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+
+.deleteQuizButton {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.deleteQuizButton:hover {
+  background-color: #c9302c;
+}
+
+/* Stats Section */
+.statsInformation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  margin-top: 30px;
+  max-width: 1300px; /* Same as the topPart to keep everything in sync */
+}
+
+.quizStats, .userStats {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 48%;  /* Ensure both sections have equal width */
+  min-width: 400px; /* Ensure each section is not too narrow */
+}
+
+/* Align text inside stats */
+.quizStatsTAA, .quizStatsASA, .userStatsYNA, .userStatsYAS, .userStatsH, .userStatsR {
+  font-weight: bold;
+  color: #333;
+}
+
+.quizStatsTACount, .quizStatsASACount, .userStatsYNACount, .userStatsYASCount, .userStatsHCount, .userStatsRCount {
+  color: #d6c000;
+  font-size: 1.4em;
+}
+
+.imageContainer {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.imageContainer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.imageContainer p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Answer Key Styling */
+.quizAnswerKey {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 30px;
+  max-width: 1300px; /* Same max-width */
+}
+
+.question-item {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.questionKeyText {
+  font-weight: bold;
+  color: #333;
+}
+
+.optionKeyLabelAnswer {
+  color: #d6c000;
+  font-weight: bold;
+}
+
+
+
+/* Bottom Part */
+.bottomPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* Comments Section */
+.addComment {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.addComment input {
+  width: 80%;
+  padding: 12px;
+  font-size: 1.2em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.commentAddButton {
+  background-color: #d6c000;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.commentAddButton:hover {
+  background-color: #b5a700;
+}
+/* Comment Section */
+.allComments {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+/* Individual Comment */
+.comment {
+  display: flex;
+  flex-direction: column;  /* Stack items vertically */
+  align-items: flex-start;  /* Align items to the left */
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Comment Text */
+.commentCommentText {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 5px;  /* Space between text and user/date */
+}
+
+/* Comment User */
+.commentCommentUser {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 5px;  /* Space between user and date */
+}
+
+/* Comment Date */
+.commentCommentDate {
+  font-size: 0.85em;
+  color: #777;
+  margin-bottom: 10px;  /* Space between date and remove button */
+}
+
+/* Remove Button */
+.commentRemoveButton {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.commentRemoveButton:hover {
+  background-color: #c9302c;
+}
+

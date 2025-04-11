@@ -1,0 +1,130 @@
+/* Title styling */
+.signupPageTitle {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: black; /* Title color */
+  margin-top: 20px;
+}
+
+.signupPageBriefIntroTitle {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: black;
+  font-family: 'Calibri', sans-serif;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px; /* Space below the intro section */
+  border-bottom: 1px solid #ccc; /* Adds a small gray line */
+}
+
+/* Info text styling for the intro section */
+.signupInfo {
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* You can also add space above the rules container */
+.signupPageRulesContainer {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Calibri', sans-serif;
+}
+
+/* Rules title and list styling */
+.signupPageRules {
+  font-size: 18px;
+  color: black;
+  margin: 10px 0;
+}
+
+/* Adjusting the list style */
+.signupPageRules ol {
+  list-style-position: inside; /* Ensures the numbers are inside the list item */
+  padding-left: 0; /* Remove default padding */
+  margin-left: 0; /* Remove default margin */
+}
+
+/* Adjusting each list item */
+.signupPageRulesInfo {
+  font-size: 14px;
+  color: black;
+  margin: 5px 0;
+  padding-left: 10px; /* Add padding to the left to adjust the number alignment */
+}
+
+
+
+
+/* Form container styling */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto; /* Form container width should be auto */
+  margin-top: 20px;
+  max-width: 350px; /* Restrict the form's max width */
+  margin-left: auto;
+  margin-right: auto; /* Center the form horizontally */
+}
+
+/* Input field styling */
+#inputCredentials {
+  padding: 10px;
+  margin: 10px 0;
+  width: 250px; /* Set a specific width to make the input fields smaller */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Calibri', sans-serif;
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: gold;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Calibri', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d4af37; /* Darker gold shade on hover */
+}
+
+/* Error message styling */
+span {
+  color: red;
+  font-size: 12px;
+}
+
+/* Signup page brief text styling */
+.signupPageBriefIntroTitle {
+  margin-top: 20px;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  font-family: 'Calibri', sans-serif;
+}
+
+/* Signup form info text styling */
+.signupInfo {
+  font-size: 18px;
+  color: black;
+  margin: 5px 0;
+  text-align: center;
+  font-family: 'Calibri', sans-serif;
+}
+
+/* Error message styling */
+span {
+  color: red;
+  font-size: 12px;
+}

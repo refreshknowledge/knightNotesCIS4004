@@ -1,0 +1,108 @@
+.App {
+  font-family: 'Calibri', sans-serif; /* Use Calibri font */
+  margin: 0; /* Ensure there's no default margin on the body */
+  padding: 0; /* Ensure no extra padding on the body */
+}
+
+.navigationBar {
+  padding: 20px;
+  background-color: black; /* Set the background color to black */
+  display: flex;
+  justify-content: space-between; /* Space out the far left, middle, and far right sections */
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box; /* Prevent overflow by including padding in width */
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.farLeftNav, .leftNav, .middleNav, .rightNav, .farRightNav {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; /* Prevent shrinking to avoid overflow */
+}
+
+.farLeftNav {
+  justify-content: flex-start; /* Align to the left */
+}
+
+.leftNav {
+  justify-content: flex-start; /* Align to the left */
+  margin-left: -10px; /* Adjust this value to move leftNav closer to farLeftNav */
+  font-size: 26px; /* Increased font size for leftNav */
+}
+
+.middleNav {
+  justify-content: center; /* Align the items in the center */
+  font-size: 26px; /* Increased font size for middleNav */
+}
+
+.rightNav {
+  justify-content: flex-end; /* Align the right content to the far right */
+}
+
+.farRightNav {
+  justify-content: flex-end; /* Align to the far right */
+}
+
+.logoLink,
+.knightNotesLink {
+  color: #FFD700; /* Change the color to gold */
+  font-size: 36px; /* Larger font size for Logo and Knight Notes */
+  text-decoration: none;
+}
+
+.loginLink,
+.signupLink,
+.landingPageLink,
+.createQuizLink {
+  color: white; /* Change all other links to white */
+  font-size: 18px; /* Larger font size for links to improve readability */
+  text-decoration: none;
+  margin-right: 20px; /* Spacing between the links */
+}
+
+.loginLink:hover,
+.signupLink:hover,
+.landingPageLink:hover,
+.createQuizLink:hover {
+  text-decoration: underline;
+}
+
+.logoutButton {
+  padding: 10px 20px;
+  background-color: #FFD700; /* Gold color for button */
+  border: none;
+  color: black;
+  cursor: pointer;
+  border-radius: 25px; /* Rounded corners for the button */
+}
+
+.logoutButton:hover {
+  background-color: #FFCC00; /* Darker gold on hover */
+}
+
+.loggedInUsername {
+  font-size: 20px; /* Increased font size for username */
+  color: white; /* Change text color to white */
+  margin-left: auto; /* Push this to the far right */
+  font-weight: normal; /* Remove bold from loggedInUsername */
+}
+
+.logoImage {
+  width: 50px;
+  margin-right: 30px; /* Adds 30px space to the right of the logo */
+}
+
+.serverNotRunning {
+  background-color: #FF0000; /* Red background to indicate an error */
+  color: white; /* White text for contrast */
+  font-size: 24px; /* Larger text for visibility */
+  font-weight: bold; /* Bold text for emphasis */
+  padding: 20px; /* Padding around the text */
+  text-align: center; /* Center-align the text */
+  width: 100%; /* Full width of the screen */
+  position: fixed; /* Fixed position so it stays at the top */
+  top: 0; /* Position it at the top of the screen */
+  left: 0; /* Ensure it's aligned to the left */
+  z-index: 1000; /* Ensure it appears above other content */
+}

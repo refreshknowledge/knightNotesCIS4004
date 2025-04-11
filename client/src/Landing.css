@@ -1,0 +1,171 @@
+/* Global Font */
+body {
+  font-family: 'Calibri', sans-serif;
+  background-color: white; /* White background for the website */
+  color: black; /* Black text as the default */
+  margin: 0;
+  padding: 0;
+}
+
+/* Search Container */
+.searchContainer {
+  margin-top: 20px;
+  text-align: center; /* Center the content in searchContainer */
+}
+
+/* Search Label */
+.searchByNameLabel {
+  font-size: 18px;
+  color: black; /* Black text for the search label */
+}
+
+/* Search Field */
+.searchByNameField {
+  padding: 8px;
+  margin-right: 10px;
+  background-color: white; /* White background for the input */
+  border: 1px solid black; /* Black border */
+  color: black; /* Black text */
+  font-family: Calibri, sans-serif; /* Ensure Calibri font is used */
+}
+
+.searchByNameButton {
+  padding: 8px 16px;
+  background-color: gold; /* Gold background for the button */
+  border: none;
+  color: black; /* Black text */
+  cursor: pointer;
+  font-family: Calibri, sans-serif;
+}
+
+.searchByNameButton:hover {
+  background-color: #b98f4b; /* Darker gold on hover */
+}
+
+/* Quizzes Page Title */
+.quizzesPageTitleContainer {
+  margin-top: 40px;
+  text-align: center; /* Center the content in quizzesPageTitleContainer */
+  background-color: black; /* Black background for quizzesPageTitle */
+  color: gold;
+  padding: 20px;
+  border-radius: 15px; /* Rounded corners */
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Quizzes Title */
+.quizzesPageTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: gold;
+}
+
+/* Group of Headings */
+.quizzesGroupOfHeadings {
+  margin-top: 10px;
+}
+
+.quizzesPageHeading {
+  font-size: 16px;
+  color: white; /* Change the text color to white */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Quizzes Container */
+.quizzesOnLandingPageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Allow quizzes to wrap horizontally */
+  margin-top: 30px;
+  gap: 20px; /* Space between items */
+}
+
+/* Individual Quiz */
+.quiz {
+  margin: 20px;
+  border: 1px solid #ddd; /* Subtle light border */
+  padding: 15px;
+  width: 300px;
+  background-color: white; /* White background for the quiz items */
+  border-radius: 10px; /* Rounded corners for quiz items */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.landingPageQuizTextContainer {
+  margin-bottom: 10px;
+}
+
+
+.title {
+  color: black; /* Black text for quiz title */
+  font-size: 24px;
+}
+
+.question {
+  color: black; /* Black text for quiz question */
+  font-size: 18px;
+}
+
+/* Buttons */
+.beginQuizButton, .viewQuizInfoButton, .likeButton {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: gold; /* Gold background for the buttons */
+  border: none;
+  color: black; /* Black text */
+  cursor: pointer;
+  font-family: Calibri, sans-serif;
+  width: 100%;
+}
+
+.beginQuizButton:hover, .viewQuizInfoButton:hover, .likeButton:hover {
+  background-color: #b98f4b; /* Darker gold on hover */
+}
+/* Like Button Container */
+.likeButtonContainer {
+  margin-top: 10px;
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Vertically center the items */
+  justify-content: center; /* Center the items horizontally */
+}
+
+/* Like Button */
+.likeButton {
+  background-color: gold;
+  border: none;
+  color: black;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: Calibri, sans-serif;
+  line-height: 1.5; /* Set the line-height to align the button text properly */
+  height: 40px; /* Define a consistent height for the button */
+  display: flex;
+  align-items: center; /* Center button text vertically */
+  justify-content: center;
+  width: auto; /* Make the button only as wide as necessary */
+  margin-right: 10px; /* Space between the button and like count */
+}
+
+/* Button Hover */
+.likeButton:hover {
+  background-color: #b98f4b; /* Darker gold on hover */
+}
+
+/* Like Something Count - Button inside */
+.likeSomethingCount button {
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  color: black; /* Color the text black */
+  padding: 0; /* Remove any padding */
+  cursor: default; /* Change cursor to default */
+  pointer-events: none; /* Disable click events on this button */
+}
+
+/* Optional: You can add this to prevent hover effect */
+.likeSomethingCount button:hover {
+  background: none; /* Ensure background doesn't change */
+  cursor: default; /* Ensure the cursor doesn't change */
+}
